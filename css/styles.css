@@ -5,6 +5,7 @@
     --iris: #4d5ae5;
     --navyblue: #2e2f42;
     --cloud: #f4f4fd;
+    --ocean: #404bbf;
 }
 
 body {
@@ -59,13 +60,21 @@ ul, ol {
 .menu-nav {
     line-height: 24px;
 }
-.menu-nav-item {
+.menu-nav-link {
     font-weight: 500;
     color: var(--navyblue);
     letter-spacing: 0.02em;
 }
-.contact-menu-item {
+.menu-nav-link:hover,
+.menu-nav-link:focus {
+    color: var(--ocean);
+}
+.contact-menu-link {
     color: var(--slate);
+}
+.contact-menu-link:hover,
+.contact-menu-link:focus {
+    color: var(--ocean);
 }
 /* end region Header */
 
@@ -138,6 +147,10 @@ ul, ol {
 }
 .trail-social-ico {
     color: var(--iris);
+}
+.trail-social-ico:hover,
+.trail-social-ico:focus {
+    color: var(--ocean);
 }
 /* end region Team */
 
