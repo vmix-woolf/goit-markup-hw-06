@@ -1,0 +1,26 @@
+:root {
+    --body-text-color: #434455;
+    --white-background-color: #ffffff;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    color: var(--body-text-color);
+    background-color: var(--white-background-color);
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul, ol {
+    list-style-type: none;
+}
+
+.page {
+    margin: 0 auto;
+    max-width: 1440px;
+}
+
