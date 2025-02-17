@@ -133,3 +133,32 @@ ul, ol {
     color: var(--iris);
 }
 /* end region Team */
+
+/* region Portfolio */
+.portfolio {
+    border-radius: 1px solid var(--cornflower);
+}
+.portfolio-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 40px;
+    color: var(--navyblue);
+}
+.portfolio-cards {
+    background-color: var(--white-background);
+}
+.project-card {
+}
+.project-card-img {
+}
+.project-card-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: var(--navyblue);
+}
+.project-card-text {
+    line-height: 24px;
+    color: var(--slate);
+}
+/* end region Portfolio */
