@@ -50,6 +50,7 @@ ul, ol {
     font-weight: 700;
     font-size: 18px;
     line-height: 21px;
+    letter-spacing: 0.03em;
     color: var(--navyblue);
 }
 .logo-accent {
@@ -61,6 +62,7 @@ ul, ol {
 .menu-nav-item {
     font-weight: 500;
     color: var(--navyblue);
+    letter-spacing: 0.02em;
 }
 .contact-menu-item {
     color: var(--slate);
@@ -76,15 +78,18 @@ ul, ol {
     font-weight: 700;
     font-size: 56px;
     line-height: 60px;
+    letter-spacing: 0.02em;
     /*text-align: center;*/
 }
 .order-btn {
     font-family: inherit;
     font-weight: 500;
+    color: white;
     background-color: var(--iris);
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15 );
     border-radius: 4px;
     line-height: 24px;
+    letter-spacing: 0.04em;
 }
 /* end region Hero */
 
@@ -92,6 +97,7 @@ ul, ol {
 .feature {
     color: var(--navyblue);
     line-height: 24px;
+    letter-spacing: 0.02em;
 }
 .feature-heading {
     font-size: 20px;
@@ -105,6 +111,7 @@ ul, ol {
 /* region Team */
 .team {
     background-color: var(--cloud);
+    letter-spacing: 0.02em;
 }
 .team-heading {
     font-weight: 700;
@@ -137,6 +144,7 @@ ul, ol {
 /* region Portfolio */
 .portfolio {
     border-radius: 1px solid var(--cornflower);
+    letter-spacing: 0.02em;
 }
 .portfolio-title {
     font-weight: 700;
@@ -170,11 +178,13 @@ ul, ol {
     font-size: 18px;
     color: var(--cloud);
     line-height: 21px;
+    letter-spacing: 0.03em;
 }
 .footer-accent {
     color: var(--iris)
 }
 .footer-text {
     color: var(--cloud);
+    letter-spacing: 0.02em;
 }
 /* end region Footer */
