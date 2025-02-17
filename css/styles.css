@@ -155,7 +155,7 @@ ul, ol {
 
 /* region Portfolio */
 .portfolio {
-    border-radius: 1px solid var(--cornflower);
+    border: 1px solid var(--cornflower);
     letter-spacing: 0.02em;
 }
 .portfolio-title {
