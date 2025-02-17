@@ -49,15 +49,16 @@ ul, ol {
     font-family: "Raleway", sans-serif;
     font-weight: 700;
     font-size: 18px;
-    line-height: 21px;
+    text-transform: uppercase;
+    line-height: 1.17;
     letter-spacing: 0.03em;
-    color: var(--navyblue);
-}
-.logo-accent {
     color: var(--iris);
 }
+.logo-studio {
+    color: var(--navyblue);
+}
 .menu-nav {
-    line-height: 24px;
+    line-height: 1.5;
 }
 .menu-nav-link {
     font-weight: 500;
@@ -67,6 +68,11 @@ ul, ol {
 .menu-nav-link:hover,
 .menu-nav-link:focus {
     color: var(--ocean);
+}
+address {
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
 }
 .contact-menu-link {
     color: var(--slate);
@@ -85,26 +91,30 @@ ul, ol {
 .slogan {
     font-weight: 700;
     font-size: 56px;
-    line-height: 60px;
+    line-height: 1.07;
     letter-spacing: 0.02em;
-    /*text-align: center;*/
+    text-align: center;
 }
 .order-btn {
     font-family: inherit;
     font-weight: 500;
+    font-size: 16px;
     color: white;
     background-color: var(--iris);
-    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15 );
-    border-radius: 4px;
-    line-height: 24px;
+    line-height: 1.5;
     letter-spacing: 0.04em;
+    cursor: pointer;
+}
+.order-btn:hover,
+.order-btn:focus {
+    color: var(--ocean);
 }
 /* end region Hero */
 
 /* region Feature */
 .feature {
     color: var(--navyblue);
-    line-height: 24px;
+    line-height: 1.2;
     letter-spacing: 0.02em;
 }
 .feature-heading {
@@ -125,23 +135,23 @@ ul, ol {
     font-weight: 700;
     font-size: 36px;
     color: var(--navyblue);
-    line-height: 40px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-align: center;
+    text-transform: capitalize;
 }
-.team-cards {
+.team-card {
     background-color: var(--white-background);
-    box-shadow:
-        0 2px 1px rgba(34, 47, 66, 0.08),
-        0 1px 1px rgba(34, 47, 66, 0.16),
-        0 1px 6px rgba(34, 47, 66, 0.08);
 }
 .team-card-title {
     font-weight: 500;
     font-size: 20px;
-    line-height: 24px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
     color: var(--navyblue);
 }
 .team-card-text {
-    line-height: 24px;
+    line-height: 1.5;
     color: var(--slate);
 }
 .trail-social-ico {
@@ -161,8 +171,11 @@ ul, ol {
 .portfolio-title {
     font-weight: 700;
     font-size: 36px;
-    line-height: 40px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
     color: var(--navyblue);
+    text-align: center;
+    text-transform: capitalize;
 }
 .portfolio-cards {
     background-color: var(--white-background);
@@ -170,11 +183,12 @@ ul, ol {
 .project-card-title {
     font-weight: 500;
     font-size: 20px;
-    line-height: 24px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
     color: var(--navyblue);
 }
 .project-card-text {
-    line-height: 24px;
+    line-height: 1.5;
     color: var(--slate);
 }
 /* end region Portfolio */
@@ -182,21 +196,21 @@ ul, ol {
 /* region Footer */
 .footer {
     background-color: var(--navyblue);
-    line-height: 24px;
 }
 .footer-logo {
     font-family: "Raleway", sans-serif;
     font-weight: 700;
     font-size: 18px;
-    color: var(--cloud);
-    line-height: 21px;
+    line-height: 1.17;
     letter-spacing: 0.03em;
+    color: var(--iris);
 }
-.footer-accent {
-    color: var(--iris)
+.footer-studio {
+    color: var(--cloud);
 }
 .footer-text {
     color: var(--cloud);
+    line-height: 1.5;
     letter-spacing: 0.02em;
 }
 /* end region Footer */
