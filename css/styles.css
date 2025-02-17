@@ -28,6 +28,19 @@ ul, ol {
     max-width: 1440px;
 }
 
+.visually-hidden {
+   position: absolute;
+   width: 1px;
+   height: 1px;
+   margin: -1px;
+   border: 0;
+   padding: 0;
+   white-space: nowrap;
+   clip-path: inset(100%);
+   clip: rect(0 0 0 0);
+   overflow: hidden;
+ }
+
 /* region Header */
 .top-line {
     border: 1px solid var(--cornflower);
@@ -38,7 +51,6 @@ ul, ol {
     font-size: 18px;
     line-height: 21px;
     color: var(--navyblue);
-
 }
 .logo-accent {
     color: var(--iris);
@@ -81,18 +93,6 @@ ul, ol {
     color: var(--navyblue);
     line-height: 24px;
 }
-.visually-hidden {
-   position: absolute;
-   width: 1px;
-   height: 1px;
-   margin: -1px;
-   border: 0;
-   padding: 0;
-   white-space: nowrap;
-   clip-path: inset(100%);
-   clip: rect(0 0 0 0);
-   overflow: hidden;
- }
 .feature-heading {
     font-size: 20px;
     font-weight: 500;
@@ -147,10 +147,6 @@ ul, ol {
 .portfolio-cards {
     background-color: var(--white-background);
 }
-.project-card {
-}
-.project-card-img {
-}
 .project-card-title {
     font-weight: 500;
     font-size: 20px;
@@ -162,3 +158,23 @@ ul, ol {
     color: var(--slate);
 }
 /* end region Portfolio */
+
+/* region Footer */
+.footer {
+    background-color: var(--navyblue);
+    line-height: 24px;
+}
+.footer-logo {
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    color: var(--cloud);
+    line-height: 21px;
+}
+.footer-accent {
+    color: var(--iris)
+}
+.footer-text {
+    color: var(--cloud);
+}
+/* end region Footer */
