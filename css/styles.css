@@ -176,7 +176,6 @@ address {
 
 /* region Footer */
 .footer {
-    color: var(--cloud);
     background-color: var(--navyblue);
 }
 .footer-logo {
@@ -192,6 +191,7 @@ address {
     color: var(--cloud);
 }
 .footer-text {
+    color: var(--cloud);
     line-height: 1.5;
     letter-spacing: 0.02em;
 }
