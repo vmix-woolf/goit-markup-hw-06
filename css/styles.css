@@ -4,6 +4,7 @@
     --cornflower: #e7e9fc;
     --iris: #4d5ae5;
     --navyblue: #2e2f42;
+    --cloud: #f4f4fd;
 }
 
 body {
@@ -100,3 +101,35 @@ ul, ol {
     color: var(--slate);
 }
 /* end region Feature*/
+
+/* region Team */
+.team {
+    background-color: var(--cloud);
+}
+.team-heading {
+    font-weight: 700;
+    font-size: 36px;
+    color: var(--navyblue);
+    line-height: 40px;
+}
+.team-cards {
+    background-color: var(--white-background);
+    box-shadow:
+        0 2px 1px rgba(34, 47, 66, 0.08),
+        0 1px 1px rgba(34, 47, 66, 0.16),
+        0 1px 6px rgba(34, 47, 66, 0.08);
+}
+.team-card-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: var(--navyblue);
+}
+.team-card-text {
+    line-height: 24px;
+    color: var(--slate);
+}
+.trail-social-ico {
+    color: var(--iris);
+}
+/* end region Team */
