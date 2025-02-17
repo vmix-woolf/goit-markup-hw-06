@@ -77,7 +77,7 @@ address {
     letter-spacing: 0.02em;
     text-align: center;
 }
-.order-btn {
+.submit-btn {
     font-family: inherit;
     font-weight: 500;
     font-size: 16px;
@@ -87,8 +87,8 @@ address {
     letter-spacing: 0.04em;
     cursor: pointer;
 }
-.order-btn:hover,
-.order-btn:focus {
+.submit-btn:hover,
+.submit-btn:focus {
     background-color: var(--ocean);
 }
 /* end region Hero */
@@ -176,6 +176,7 @@ address {
 
 /* region Footer */
 .footer {
+    color: var(--cloud);
     background-color: var(--navyblue);
 }
 .footer-logo {
@@ -191,7 +192,6 @@ address {
     color: var(--cloud);
 }
 .footer-text {
-    color: var(--cloud);
     line-height: 1.5;
     letter-spacing: 0.02em;
 }
