@@ -25,9 +25,6 @@ ul, ol {
 }
 
 /* region Header */
-.top-line {
-    border: 1px solid var(--cornflower);
-}
 .logo {
     font-family: "Raleway", sans-serif;
     font-weight: 700;
@@ -92,7 +89,7 @@ address {
 }
 .order-btn:hover,
 .order-btn:focus {
-    color: var(--ocean);
+    background-color: var(--ocean);
 }
 /* end region Hero */
 
@@ -109,6 +106,7 @@ address {
 .feature-text {
     color: var(--slate);
     line-height: 1.5;
+    letter-spacing: 0.02em;
 }
 /* end region Feature*/
 
@@ -150,10 +148,6 @@ address {
 /* end region Team */
 
 /* region Portfolio */
-.portfolio {
-    border: 1px solid var(--cornflower);
-    letter-spacing: 0.02em;
-}
 .portfolio-title {
     font-weight: 700;
     font-size: 36px;
