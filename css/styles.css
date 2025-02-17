@@ -24,23 +24,6 @@ ul, ol {
     list-style-type: none;
 }
 
-.page {
-    margin: 0 auto;
-    max-width: 1440px;
-}
-
-.visually-hidden {
-   position: absolute;
-   width: 1px;
-   height: 1px;
-   margin: -1px;
-   border: 0;
-   padding: 0;
-   white-space: nowrap;
-   clip-path: inset(100%);
-   overflow: hidden;
- }
-
 /* region Header */
 .top-line {
     border: 1px solid var(--cornflower);
@@ -62,8 +45,10 @@ ul, ol {
 }
 .menu-nav-link {
     font-weight: 500;
-    color: var(--navyblue);
+    font-size: 16px;
+    line-height: 1.5;
     letter-spacing: 0.02em;
+    color: var(--navyblue);
 }
 .menu-nav-link:hover,
 .menu-nav-link:focus {
@@ -114,15 +99,16 @@ address {
 /* region Feature */
 .feature {
     color: var(--navyblue);
-    line-height: 1.2;
-    letter-spacing: 0.02em;
 }
 .feature-heading {
     font-size: 20px;
     font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
 }
 .feature-text {
     color: var(--slate);
+    line-height: 1.5;
 }
 /* end region Feature*/
 
@@ -204,8 +190,8 @@ address {
     font-size: 18px;
     line-height: 1.17;
     letter-spacing: 0.03em;
-    color: var(--iris);
     text-transform: uppercase;
+    color: var(--iris);
 }
 .footer-studio {
     color: var(--cloud);
