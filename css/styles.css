@@ -8,6 +8,7 @@
     --ocean: #404bbf;
 }
 
+/* region Common styles */
 body {
     font-family: "Roboto", sans-serif;
     color: var(--slate);
@@ -37,8 +38,17 @@ img {
     padding: 0 16px;
     margin: 0 auto;
 }
+/* endregion */
 
 /* region Header */
+.top-line {
+    display: flex;
+    justify-content: space-between;
+}
+.menu {
+    display: flex;
+    /*justify-content: space-between;*/
+}
 .logo {
     font-family: "Raleway", sans-serif;
     font-weight: 700;
@@ -52,6 +62,9 @@ img {
     color: var(--navyblue);
 }
 .menu-nav {
+    display: flex;
+    gap: 40px;
+    /*justify-content: space-between;*/
     line-height: 1.5;
 }
 .menu-nav-link {
@@ -70,6 +83,9 @@ address {
     line-height: 1.5;
     letter-spacing: 0.02em;
 }
+.contact-menu {
+    display: flex;
+}
 .contact-menu-link {
     color: var(--slate);
 }
@@ -77,7 +93,7 @@ address {
 .contact-menu-link:focus {
     color: var(--ocean);
 }
-/* end region Header */
+/* endregion Header */
 
 /* region Hero */
 .hero {
@@ -105,7 +121,7 @@ address {
 .submit-btn:focus {
     background-color: var(--ocean);
 }
-/* end region Hero */
+/* endregion Hero */
 
 /* region Feature */
 .feature {
@@ -122,7 +138,7 @@ address {
     line-height: 1.5;
     letter-spacing: 0.02em;
 }
-/* end region Feature*/
+/* endregion Feature*/
 
 /* region Team */
 .team {
@@ -159,7 +175,7 @@ address {
 .trail-social-ico:focus {
     color: var(--ocean);
 }
-/* end region Team */
+/* endregion Team */
 
 /* region Portfolio */
 .portfolio-title {
@@ -186,7 +202,7 @@ address {
     letter-spacing: 0.02em;
     color: var(--slate);
 }
-/* end region Portfolio */
+/* endregion Portfolio */
 
 /* region Footer */
 .footer {
@@ -209,4 +225,4 @@ address {
     line-height: 1.5;
     letter-spacing: 0.02em;
 }
-/* end region Footer */
+/* endregion Footer */
