@@ -7,143 +7,156 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css">
         <link rel="stylesheet" href="css/styles.css">
     </head>
     <body class="page">
         <header class="top-line">
-            <nav class="menu">
-                <a class="logo" href="./index.html">Web<span class="logo-studio">Studio</span></a>
-                <ul class="menu-nav">
-                    <li class="menu-nav-item"><a class="menu-nav-link" href="./index.html">Studio</a></li>
-                    <li class="menu-nav-item"><a class="menu-nav-link" href="">Portfolio</a></li>
-                    <li class="menu-nav-item"><a class="menu-nav-link" href="">Contacts</a></li>
-                </ul>
-            </nav>
-            <address class="contact">
-                <ul class="contact-menu">
-                    <li class="contact-menu-item"><a class="contact-menu-link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                    <li class="contact-menu-item"><a class="contact-menu-link" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
-                </ul>
-            </address>
+            <div class="container">
+                <nav class="menu">
+                    <a class="logo" href="./index.html">Web<span class="logo-studio">Studio</span></a>
+                    <ul class="menu-nav">
+                        <li class="menu-nav-item"><a class="menu-nav-link" href="./index.html">Studio</a></li>
+                        <li class="menu-nav-item"><a class="menu-nav-link" href="">Portfolio</a></li>
+                        <li class="menu-nav-item"><a class="menu-nav-link" href="">Contacts</a></li>
+                    </ul>
+                </nav>
+                <address class="contact">
+                    <ul class="contact-menu">
+                        <li class="contact-menu-item"><a class="contact-menu-link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                        <li class="contact-menu-item"><a class="contact-menu-link" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
+                    </ul>
+                </address>
+            </div>
         </header>
         <main>
             <section class="hero">
-                <h1 class="slogan">
-                    Effective Solutions for Your Business
-                </h1>
-                <button class="submit-btn" type="button">Order Service</button>
+                <div class="container">
+                    <h1 class="slogan">
+                        Effective Solutions for Your Business
+                    </h1>
+                    <button class="submit-btn" type="button">Order Service</button>
+                </div>
             </section>
             <section class="feature">
-                <h2 class="feature-title" hidden>Features</h2>
-                <ul class="feature-list">
-                    <li class="feature-list-item">
-                        <h3 class="feature-heading">Strategy</h3>
-                        <p class="feature-text">Our goal is to identify the business problem to walk away with the perfect and creative solution. </p>
-                    </li>
-                    <li class="feature-list-item">
-                        <h3 class="feature-heading">Punctuality</h3>
-                        <p class="feature-text">Bring the key message to the brand's audience for the best price within the shortest possible time.  </p>
-                    </li>
-                    <li class="feature-list-item">
-                        <h3 class="feature-heading">Diligence</h3>
-                        <p class="feature-text">Research and confirm brands with the strongest digital growth opportunities and minimize risk. </p>
-                    </li>
-                    <li class="feature-list-item">
-                        <h3 class="feature-heading">Technologies</h3>
-                        <p class="feature-text">Design practice focused on digital experiences. We bring forth a deep passion for problem-solving. </p>
-                    </li>
-                </ul>
+                <div class="container">
+                    <h2 class="feature-title" hidden>Features</h2>
+                    <ul class="feature-list">
+                        <li class="feature-list-item">
+                            <h3 class="feature-heading">Strategy</h3>
+                            <p class="feature-text">Our goal is to identify the business problem to walk away with the perfect and creative solution. </p>
+                        </li>
+                        <li class="feature-list-item">
+                            <h3 class="feature-heading">Punctuality</h3>
+                            <p class="feature-text">Bring the key message to the brand's audience for the best price within the shortest possible time.  </p>
+                        </li>
+                        <li class="feature-list-item">
+                            <h3 class="feature-heading">Diligence</h3>
+                            <p class="feature-text">Research and confirm brands with the strongest digital growth opportunities and minimize risk. </p>
+                        </li>
+                        <li class="feature-list-item">
+                            <h3 class="feature-heading">Technologies</h3>
+                            <p class="feature-text">Design practice focused on digital experiences. We bring forth a deep passion for problem-solving. </p>
+                        </li>
+                    </ul>
+                </div>
             </section>
             <section class="team">
-                <h2 class="team-heading">Our Team</h2>
-                <ul class="team-cards">
-                    <li class="team-card">
-                        <img class="team-card-img" src="./images/mark_guerrero.jpg" alt="Mark Guerrero. Product Designer." width="264" height="260">
-                        <h3 class="team-card-title">Mark Guerrero</h3>
-                        <p class="team-card-text">Product Designer</p>
-                        <ul class="trail-social" hidden>
-                            <li><img class="trail-social-ico" src="./images/social/instagram.svg" alt="Instagram icon" width="40" height="40"></li>
-                            <li><img class="trail-social-ico" src="./images/social/x.svg" alt="X icon" width="40" height="40"></li>
-                            <li><img class="trail-social-ico" src="./images/social/facebook.svg" alt="Facebook icon" width="40" height="40"></li>
-                            <li><img class="trail-social-ico" src="./images/social/linkedin.svg" alt="LinkedIn icon" width="40" height="40"></li>
-                        </ul>
-                    </li>
-                    <li class="team-card">
-                        <img class="team-card-img" src="./images/tom_ford.jpg" alt="Tom Ford. Frontend Developer." width="264" height="260">
-                        <h3 class="team-card-title">Tom Ford</h3>
-                        <p class="team-card-text">Frontend Developer</p>
-                        <ul class="team-social" hidden>
-                            <li><img class="trail-social-ico" src="./images/social/instagram.svg" alt="Instagram icon" width="40" height="40"></li>
-                            <li><img class="trail-social-ico" src="./images/social/x.svg" alt="X icon" width="40" height="40"></li>
-                            <li><img class="trail-social-ico" src="./images/social/facebook.svg" alt="Facebook icon" width="40" height="40"></li>
-                            <li><img class="trail-social-ico" src="./images/social/linkedin.svg" alt="LinkedIn icon" width="40" height="40"></li>
-                        </ul>
-                    </li>
-                    <li class="team-card">
-                        <img class="team-card-img" src="./images/camila_garcia.jpg" alt="Tom Ford. Marketing." width="264" height="260">
-                        <h3 class="team-card-title">Cami class=team-card-title"la Garcia</h3>
-                        <p class="team-card-text">Marketing</p>
-                        <ul class="team-social" hidden>
-                            <li><img class="trail-social-ico" src="./images/social/instagram.svg" alt="Instagram icon" width="40" height="40"></li>
-                            <li><img class="trail-social-ico" src="./images/social/x.svg" alt="X icon" width="40" height="40"></li>
-                            <li><img class="trail-social-ico" src="./images/social/facebook.svg" alt="Facebook icon" width="40" height="40"></li>
-                            <li><img class="trail-social-ico" src="./images/social/linkedin.svg" alt="LinkedIn icon" width="40" height="40"></li>
-                        </ul>
-                    </li>
-                    <li class="team-card">
-                        <img class="team-card-img" src="./images/daniel_wilson.jpg" alt="Daniel Wilson. UI Designer." width="264" height="260">
-                        <h3 class="team-card-title">Dani class=team-card-title"el Wilson</h3>
-                        <p class="team-card-text">UI Designer</p>
-                        <ul class="team-social" hidden>
-                            <li><img class="trail-social-ico" src="./images/social/instagram.svg" alt="Instagram icon" width="40" height="40"></li>
-                            <li><img class="trail-social-ico" src="./images/social/x.svg" alt="X icon" width="40" height="40"></li>
-                            <li><img class="trail-social-ico" src="./images/social/facebook.svg" alt="Facebook icon" width="40" height="40"></li>
-                            <li><img class="trail-social-ico" src="./images/social/linkedin.svg" alt="LinkedIn icon" width="40" height="40"></li>
-                        </ul>
-                    </li>
-                </ul>
+                <div class="container">
+                    <h2 class="team-heading">Our Team</h2>
+                    <ul class="team-cards">
+                        <li class="team-card">
+                            <img class="team-card-img" src="./images/mark_guerrero.jpg" alt="Mark Guerrero. Product Designer." width="264" height="260">
+                            <h3 class="team-card-title">Mark Guerrero</h3>
+                            <p class="team-card-text">Product Designer</p>
+                            <ul class="trail-social" hidden>
+                                <li><img class="trail-social-ico" src="./images/social/instagram.svg" alt="Instagram icon" width="40" height="40"></li>
+                                <li><img class="trail-social-ico" src="./images/social/x.svg" alt="X icon" width="40" height="40"></li>
+                                <li><img class="trail-social-ico" src="./images/social/facebook.svg" alt="Facebook icon" width="40" height="40"></li>
+                                <li><img class="trail-social-ico" src="./images/social/linkedin.svg" alt="LinkedIn icon" width="40" height="40"></li>
+                            </ul>
+                        </li>
+                        <li class="team-card">
+                            <img class="team-card-img" src="./images/tom_ford.jpg" alt="Tom Ford. Frontend Developer." width="264" height="260">
+                            <h3 class="team-card-title">Tom Ford</h3>
+                            <p class="team-card-text">Frontend Developer</p>
+                            <ul class="team-social" hidden>
+                                <li><img class="trail-social-ico" src="./images/social/instagram.svg" alt="Instagram icon" width="40" height="40"></li>
+                                <li><img class="trail-social-ico" src="./images/social/x.svg" alt="X icon" width="40" height="40"></li>
+                                <li><img class="trail-social-ico" src="./images/social/facebook.svg" alt="Facebook icon" width="40" height="40"></li>
+                                <li><img class="trail-social-ico" src="./images/social/linkedin.svg" alt="LinkedIn icon" width="40" height="40"></li>
+                            </ul>
+                        </li>
+                        <li class="team-card">
+                            <img class="team-card-img" src="./images/camila_garcia.jpg" alt="Tom Ford. Marketing." width="264" height="260">
+                            <h3 class="team-card-title">Cami class=team-card-title"la Garcia</h3>
+                            <p class="team-card-text">Marketing</p>
+                            <ul class="team-social" hidden>
+                                <li><img class="trail-social-ico" src="./images/social/instagram.svg" alt="Instagram icon" width="40" height="40"></li>
+                                <li><img class="trail-social-ico" src="./images/social/x.svg" alt="X icon" width="40" height="40"></li>
+                                <li><img class="trail-social-ico" src="./images/social/facebook.svg" alt="Facebook icon" width="40" height="40"></li>
+                                <li><img class="trail-social-ico" src="./images/social/linkedin.svg" alt="LinkedIn icon" width="40" height="40"></li>
+                            </ul>
+                        </li>
+                        <li class="team-card">
+                            <img class="team-card-img" src="./images/daniel_wilson.jpg" alt="Daniel Wilson. UI Designer." width="264" height="260">
+                            <h3 class="team-card-title">Dani class=team-card-title"el Wilson</h3>
+                            <p class="team-card-text">UI Designer</p>
+                            <ul class="team-social" hidden>
+                                <li><img class="trail-social-ico" src="./images/social/instagram.svg" alt="Instagram icon" width="40" height="40"></li>
+                                <li><img class="trail-social-ico" src="./images/social/x.svg" alt="X icon" width="40" height="40"></li>
+                                <li><img class="trail-social-ico" src="./images/social/facebook.svg" alt="Facebook icon" width="40" height="40"></li>
+                                <li><img class="trail-social-ico" src="./images/social/linkedin.svg" alt="LinkedIn icon" width="40" height="40"></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
             </section>
             <section class="portfolio">
-                <h2 class="portfolio-title">Our portfolio</h2>
-                <ul class="portfolio-cards">
-                    <li class="project-card">
-                        <img class="project-card-img" src="./images/portfolio/banking-app.jpg" alt="Banking App" width="360" height="300">
-                        <h3 class="project-card-title">Banking App</h3>
-                        <p class="project-card-text">App</p>
-                    </li>
-                    <li class="project-card">
-                        <img class="project-card-img" src="./images/portfolio/cashless-payment.jpg" alt="Cashless Payment" width="360" height="300">
-                        <h3 class="project-card-title">Cashless Payment</h3>
-                        <p class="project-card-text">Marketing</p>
-                    </li>
-                    <li class="project-card">
-                        <img class="project-card-img" src="./images/portfolio/meditation-app.jpg" alt="Meditation App" width="360" height="300">
-                        <h3 class="project-card-title">Meditation App</h3>
-                        <p class="project-card-text">App</p>
-                    </li>
-                    <li class="project-card">
-                        <img class="project-card-img" src="./images/portfolio/taxi-service.jpg" alt="Taxi Service" width="360" height="300">
-                        <h3 class="project-card-title">Taxi Service</h3>
-                        <p class="project-card-text">Marketing</p>
-                    </li>
-                    <li class="project-card">
-                        <img class="project-card-img" src="./images/portfolio/screen-illustrations.jpg" alt="Screen Illustrations" width="360" height="300">
-                        <h3 class="project-card-title">Screen Illustrations</h3>
-                        <p class="project-card-text">Design</p>
-                    </li>
-                    <li class="project-card">
-                        <img class="project-card-img" src="./images/portfolio/online-courses.jpg" alt="Online Courses" width="360" height="300">
-                        <h3 class="project-card-title">Online Courses</h3>
-                        <p class="project-card-text">Marketing</p>
-                    </li>
-                </ul>
+                <div class="container">
+                    <h2 class="portfolio-title">Our portfolio</h2>
+                    <ul class="portfolio-cards">
+                        <li class="project-card">
+                            <img class="project-card-img" src="./images/portfolio/banking-app.jpg" alt="Banking App" width="360" height="300">
+                            <h3 class="project-card-title">Banking App</h3>
+                            <p class="project-card-text">App</p>
+                        </li>
+                        <li class="project-card">
+                            <img class="project-card-img" src="./images/portfolio/cashless-payment.jpg" alt="Cashless Payment" width="360" height="300">
+                            <h3 class="project-card-title">Cashless Payment</h3>
+                            <p class="project-card-text">Marketing</p>
+                        </li>
+                        <li class="project-card">
+                            <img class="project-card-img" src="./images/portfolio/meditation-app.jpg" alt="Meditation App" width="360" height="300">
+                            <h3 class="project-card-title">Meditation App</h3>
+                            <p class="project-card-text">App</p>
+                        </li>
+                        <li class="project-card">
+                            <img class="project-card-img" src="./images/portfolio/taxi-service.jpg" alt="Taxi Service" width="360" height="300">
+                            <h3 class="project-card-title">Taxi Service</h3>
+                            <p class="project-card-text">Marketing</p>
+                        </li>
+                        <li class="project-card">
+                            <img class="project-card-img" src="./images/portfolio/screen-illustrations.jpg" alt="Screen Illustrations" width="360" height="300">
+                            <h3 class="project-card-title">Screen Illustrations</h3>
+                            <p class="project-card-text">Design</p>
+                        </li>
+                        <li class="project-card">
+                            <img class="project-card-img" src="./images/portfolio/online-courses.jpg" alt="Online Courses" width="360" height="300">
+                            <h3 class="project-card-title">Online Courses</h3>
+                            <p class="project-card-text">Marketing</p>
+                        </li>
+                    </ul>
+                </div>
             </section>
         </main>
         <footer class="footer">
-            <a class="footer-logo" href="./index.html">Web<span class="footer-studio">Studio</span></a>
-            <p class="footer-text">
-                Increase the flow of customers and sales for your business with digital marketing &amp; growth solutions.
-            </p>
+            <div class="container">
+                <a class="footer-logo" href="./index.html">Web<span class="footer-studio">Studio</span></a>
+                <p class="footer-text">
+                    Increase the flow of customers and sales for your business with digital marketing &amp; growth solutions.
+                </p>
+            </div>
         </footer>
     </body>
 </html>
