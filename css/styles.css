@@ -53,7 +53,7 @@ img {
 /* endregion */
 
 /* region Header */
-.top-line {
+.container.header-container {
     display: flex;
     justify-content: space-between;
 }
@@ -124,12 +124,13 @@ address {
     color: white;
     background-color: var(--navyblue);
     padding-bottom: 188px;
+    border: 1px solid black;
 }
 .container.hero-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /*justify-content: center;*/
+
     margin: 0 auto;
 }
 .hero-slogan {
@@ -277,6 +278,10 @@ address {
     justify-content: center;
     row-gap: 48px;
     column-gap: 24px;
+}
+.portfolio-card-description {
+    border: 1px solid var(--cornflower);
+    border-top: none;
 }
 .portfolio-card-title {
     font-weight: 500;
