@@ -47,6 +47,7 @@ img {
     padding: 0;
     white-space: nowrap;
     clip-path: inset(100%);
+    clip: rect(0 0 0 0);
     overflow: hidden;
 }
 /* endregion */
@@ -168,17 +169,6 @@ address {
 .feature {
     color: var(--navyblue);
     padding: 120px 0 120px;
-}
-.feature-title.visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    white-space: nowrap;
-    clip-path: inset(100%);
-    overflow: hidden;
 }
 .feature-list {
     display: flex;
@@ -329,12 +319,7 @@ address {
     background-color: var(--navyblue);
     padding: 100px 0 100px;
 }
-.container.footer-container {
-    display: flex;
-    flex-direction: column;
-}
 .footer-logo {
-    display: inline-block;
     font-family: "Raleway", sans-serif;
     font-weight: 700;
     font-size: 18px;
@@ -343,9 +328,11 @@ address {
     text-transform: uppercase;
     color: var(--iris);
     margin-bottom: 16px;
+    display: inline-block;
 }
 .footer-studio {
     color: var(--cloud);
+    display: inline-block;
 }
 .footer-text {
     color: var(--cloud);
