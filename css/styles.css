@@ -182,7 +182,7 @@ address {
     margin-bottom: 8px;
 }
 .feature-list-item {
-    width: calc((100% - 24px * 3) / 4);;
+    width: calc((100% - 24px * 3) / 4);
 }
 .feature-text {
     color: var(--slate);
@@ -196,6 +196,11 @@ address {
     background-color: var(--cloud);
     letter-spacing: 0.02em;
 }
+.container.team-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .team-heading {
     font-weight: 700;
     font-size: 36px;
@@ -204,9 +209,19 @@ address {
     letter-spacing: 0.02em;
     text-align: center;
     text-transform: capitalize;
+    padding-top: 120px;
+}
+.team-cards {
+    display: flex;
+    gap: 24px;
+    margin-top: 72px;
+    padding-bottom: 120px;
+    padding-left: 156px;
 }
 .team-card {
     background-color: var(--white-background);
+    width: calc((100% - 24px * 3) / 4);
+    text-align: center;
 }
 .team-card-title {
     font-weight: 500;
@@ -214,16 +229,20 @@ address {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: var(--navyblue);
+    margin-top: 32px;
+    /*padding-left: 65px;*/
 }
 .team-card-text {
     line-height: 1.5;
     color: var(--slate);
+    margin-top: 8px;
+    padding-bottom: 32px;
 }
-.trail-social-ico {
+.trail-social-svg {
     color: var(--iris);
 }
-.trail-social-ico:hover,
-.trail-social-ico:focus {
+.trail-social-svg:hover,
+.trail-social-svg:focus {
     color: var(--ocean);
 }
 /* endregion Team */
