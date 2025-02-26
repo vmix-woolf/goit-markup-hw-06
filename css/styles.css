@@ -262,7 +262,7 @@ address {
 .container.portfolio-container {
     display: flex;
     flex-direction: column;
-    padding: 120px 0;
+    padding: 120px 0 120px 0;
 }
 .portfolio-title {
     font-weight: 700;
@@ -278,9 +278,10 @@ address {
     background-color: var(--white-background);
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
     row-gap: 48px;
     column-gap: 24px;
+}
+.portfolio-card {
     width: calc((100% - 48px) / 3);
 }
 .portfolio-card-description {
