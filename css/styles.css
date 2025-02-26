@@ -47,7 +47,7 @@ img {
     padding: 0;
     white-space: nowrap;
     clip-path: inset(100%);
-    clip: rect(0 0 0 0);
+    /*clip: rect(0 0 0 0);*/
     overflow: hidden;
 }
 /* endregion */
@@ -100,12 +100,10 @@ address {
     font-style: normal;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    /*padding-left: 332px;*/
 }
 .contact-menu {
     display: flex;
     gap: 40px;
-    padding-right: 156px;
 }
 .contact-menu-item {
     padding: 24px 0;
@@ -139,8 +137,8 @@ address {
     line-height: 1.07;
     letter-spacing: 0.02em;
     text-align: center;
-    margin: 0 472px;
     padding-top: 188px;
+    margin-bottom: 48px;
 }
 .hero-button {
     font-family: inherit;
@@ -151,7 +149,6 @@ address {
     line-height: 1.5;
     letter-spacing: 0.04em;
     cursor: pointer;
-    margin-top: 48px;
     padding: 16px 32px;
 
 }
