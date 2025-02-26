@@ -322,6 +322,9 @@ address {
     display: flex;
     flex-direction: column;
 }
+.footer-container a {
+    display: inline-block;
+}
 .footer-logo {
     font-family: "Raleway", sans-serif;
     font-weight: 700;
@@ -334,10 +337,6 @@ address {
 }
 .footer-studio {
     color: var(--cloud);
-}
-.footer-logo,
-.footer-studio {
-    display: inline-block;
 }
 .footer-text {
     color: var(--cloud);
