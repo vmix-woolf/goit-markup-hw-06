@@ -244,6 +244,11 @@ address {
 .trail-social-svg:focus {
     color: var(--ocean);
 }
+.team-card-img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
 /* endregion Team */
 
 /* region Portfolio */
@@ -288,6 +293,11 @@ address {
     letter-spacing: 0.02em;
     color: var(--slate);
     padding-left: 16px;
+}
+.portfolio-card-img {
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
 /* endregion Portfolio */
 
