@@ -38,6 +38,18 @@ img {
     padding: 0 15px;
     margin: 0 auto;
 }
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
 /* endregion */
 
 /* region Header */
@@ -111,15 +123,25 @@ address {
 .hero {
     color: white;
     background-color: var(--navyblue);
+    padding-bottom: 188px;
 }
-.slogan {
+.container.hero-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*justify-content: center;*/
+    margin: 0 auto;
+}
+.hero-slogan {
     font-weight: 700;
     font-size: 56px;
     line-height: 1.07;
     letter-spacing: 0.02em;
     text-align: center;
+    margin: 0 472px;
+    padding-top: 188px;
 }
-.submit-btn {
+.hero-button {
     font-family: inherit;
     font-weight: 500;
     font-size: 16px;
@@ -128,9 +150,12 @@ address {
     line-height: 1.5;
     letter-spacing: 0.04em;
     cursor: pointer;
+    margin-top: 48px;
+    padding: 16px 32px;
+
 }
-.submit-btn:hover,
-.submit-btn:focus {
+.hero-button:hover,
+.hero-button:focus {
     background-color: var(--ocean);
 }
 /* endregion Hero */
@@ -139,11 +164,25 @@ address {
 .feature {
     color: var(--navyblue);
 }
+.container.feature-container {
+    margin: 0 auto;
+    padding: 120px 156px;
+}
+.feature-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+}
 .feature-heading {
     font-size: 20px;
     font-weight: 500;
     line-height: 1.2;
     letter-spacing: 0.02em;
+    margin-bottom: 8px;
+}
+.feature-list-item {
+    width: calc((100% - 24px * 3) / 4);;
 }
 .feature-text {
     color: var(--slate);
