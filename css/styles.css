@@ -52,10 +52,12 @@ img {
 /* endregion */
 
 /* region Header */
+.header {
+    border-bottom: 1px solid var(--cornflower);
+}
 .container.header-container {
     display: flex;
     justify-content: space-between;
-    border-bottom: 1px solid var(--cornflower);
     max-width: 1158px;
 }
 .menu {
@@ -82,10 +84,9 @@ img {
     display: flex;
     gap: 40px;
     line-height: 1.5;
-    padding: 24px 0;
 }
 .menu-nav-item {
-    /*padding: 24px 0;*/
+    padding: 24px 0 24px;
 }
 .menu-nav-link {
     font-weight: 500;
@@ -124,12 +125,12 @@ address {
     color: white;
     background-color: var(--navyblue);
     border: 1px solid black;
+    padding: 188px 0 188px;
 }
 .container.hero-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 188px 0 188px 0;
 }
 .hero-slogan {
     font-weight: 700;
@@ -165,10 +166,18 @@ address {
 /* region Feature */
 .feature {
     color: var(--navyblue);
+    padding: 120px 0 120px;
 }
-.container.feature-container {
-    margin: 0 auto;
-    padding: 120px 0 120px 0;
+.feature-title.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    overflow: hidden;
 }
 .feature-list {
     display: flex;
@@ -197,12 +206,12 @@ address {
 .team {
     background-color: var(--cloud);
     letter-spacing: 0.02em;
+    padding: 120px 0 120px;
 }
 .container.team-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 120px 0 120px 0;
 }
 .team-heading {
     font-weight: 700;
@@ -216,15 +225,15 @@ address {
 }
 .team-cards {
     display: flex;
-    gap: 32px;
-    padding-bottom: 120px;
+    gap: 24px;
+    /*padding-bottom: 120px;*/
 }
 .team-card-description {
     padding: 32px 0;
 }
 .team-card {
     background-color: var(--white-background);
-    width: calc((100% - 32px * 3) / 4);
+    flex-basis: calc((100% - 3 * 24px) / 4);
     text-align: center;
     border-radius: 0 0 4px 4px;
 
@@ -262,7 +271,7 @@ address {
 .container.portfolio-container {
     display: flex;
     flex-direction: column;
-    padding: 120px 0 120px 0;
+    padding: 120px 0 120px;
 }
 .portfolio-title {
     font-weight: 700;
@@ -315,11 +324,11 @@ address {
 /* region Footer */
 .footer {
     background-color: var(--navyblue);
+    padding: 100px 0 100px;
 }
 .container.footer-container {
     display: flex;
     flex-direction: column;
-    padding: 100px 0;
 }
 .footer-logo {
     font-family: "Raleway", sans-serif;
