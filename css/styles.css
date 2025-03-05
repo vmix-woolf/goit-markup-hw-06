@@ -126,6 +126,11 @@ address {
 .hero {
     color: white;
     background-color: var(--navyblue);
+    background-image:
+            linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+            url("../images/background-hero.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
     border: 1px solid black;
     padding: 188px 0 188px;
 }
