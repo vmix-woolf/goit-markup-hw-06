@@ -101,6 +101,16 @@ img {
 .menu-nav-link:focus {
     color: var(--ocean);
 }
+.menu-nav-link::after {
+    content: '';
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    height: 4px;
+    background-color: #404bbf;
+    border-radius: 2px;
+}
 address {
     font-style: normal;
     line-height: 1.5;
@@ -131,6 +141,7 @@ address {
             url("../images/background-hero.jpg");
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
     border: 1px solid black;
     padding: 188px 0 188px;
 }
@@ -189,6 +200,8 @@ address {
     margin-bottom: 8px;
 }
 .feature-list-item {
+    display: flex;
+    flex-direction: column;
     width: calc((100% - 24px * 3) / 4);
 }
 .feature-text {
@@ -249,11 +262,22 @@ address {
     margin-top: 8px;
     text-align: center;
 }
-.trail-social-svg {
+.trail-social {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    list-style: none;
+    padding: 0;
+    margin-top: 8px;
+}
+.trail-social-item {
+
+}
+.social-icon {
     color: var(--iris);
 }
-.trail-social-svg:hover,
-.trail-social-svg:focus {
+.social-icon:hover,
+.social-icon:focus {
     color: var(--ocean);
 }
 .team-card-img {
