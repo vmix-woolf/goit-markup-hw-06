@@ -151,6 +151,7 @@ address {
 /* region Hero */
 .hero {
     max-width: 1440px;
+    margin: 0 auto;
     color: var(--white-background);
     background-color: var(--navyblue);
     background-image:
@@ -264,9 +265,6 @@ address {
     gap: 24px;
     /*padding-bottom: 120px;*/
 }
-.team-card-description {
-    padding: 32px 0;
-}
 .team-card {
     background-color: var(--white-background);
     flex-basis: calc((100% - 3 * 24px) / 4);
@@ -275,9 +273,15 @@ address {
     box-shadow: 0 1px 6px rgba(46, 47, 66, 0.08),
         0 1px 1px rgba(46, 47, 66, 0.16),
         0 2px 1px rgba(46, 47, 66, 0.08);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.team-card .socials-icon {
-    fill: var(--cloud);
+.team-card-img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+.team-card-description {
+    padding: 32px 0;
 }
 .team-card-title {
     font-weight: 500;
@@ -299,24 +303,28 @@ address {
     justify-content: center;
     gap: 24px;
 
-    /*list-style: none;*/
-    /*padding: 0;*/
-    /*margin-top: 8px;*/
+    margin-top: 8px;
 }
 .team-socials-item {
-
+    width: 40px;
+    height: 40px;
 }
-.team-socials-icon {
+.team-socials-link {
+    width: 100%;
+    height: 100%;
+    background-color: var(--iris);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: var(--iris);
 }
-.team-socials-icon:hover,
-.team-socials-icon:focus {
+.team-socials-link:hover,
+.team-socials-link:focus {
     color: var(--ocean);
 }
-.team-card-img {
-    display: block;
-    max-width: 100%;
-    height: auto;
+.team-socials-icon {
+    fill: var(--cloud);
 }
 /* endregion Team */
 
