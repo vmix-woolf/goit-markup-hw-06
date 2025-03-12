@@ -527,44 +527,45 @@ address {
     color: var(--white-color);
     margin-bottom: 16px;
 }
-.input-container {
+.sf-label {
     position: relative;
     display: inline-block;
 }
-.input-container .sf-input-email {
-    padding-left: 68px;
-    background-color: var(--navyblue);
-    color: var(--white-color);
-    max-width: 264px;
+.subscribe-input-email {
+    width: 264px;
     height: 40px;
     border: 1px solid var(--white-color);
+    color: var(--white-color);
+    background-color: transparent;
+    font-size: 12px;
+    line-height: 2;
+    letter-spacing: 0.04em;
+    padding-left: 16px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
 }
-.sf-prefix-email {
-    position: absolute;
-    top: 50%;
-    left: 16px;
-    transform: translateY(-50%);
-    font-size: 12px;
-    letter-spacing: 0.04em;
+.subscribe-input-email::placeholder {
     color: var(--white-color);
-    pointer-events: none;
 }
 .sf-submit-button {
     display: flex;
     align-items: center;
     gap: 16px;
     min-width: 165px;
-    max-height: 40px;
-    background-color: var(--iris);
-    color: var(--white-color);
+    height: 40px;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
     font-weight: 500;
     line-height: 1.5;
-    letter-spacing: 0.02em;
-    padding-left: 24px;
+    letter-spacing: 0.04em;
+    color: var(--white-color);
+    cursor: pointer;
+    background-color: var(--iris);
     border: none;
     border-radius: 4px;
-    cursor: pointer;
+}
+.sf-submit-button-text {
+    padding-left: 24px;
 }
 .footer-subscribe-icon {
     width: 24px;

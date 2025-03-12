@@ -397,12 +397,16 @@
                 <div class="footer-subscribe">
                     <p class="footer-subscribe-title">Subscribe</p>
                     <form class="subscribe-form">
-                        <label for="subscribe-email" class="visually-hidden"></label>
-                        <div class="input-container">
-                            <input type="email" id="subscribe-email" class="sf-input-email" name="subscribe" required>
-                            <span class="sf-prefix-email">E-mail</span>
-                        </div>
-                        <button class="sf-submit-button">
+                        <label for="subscribe-email" class="sf-label">
+                            <input type="email"
+                                   id="subscribe-email"
+                                   class="subscribe-input-email"
+                                   name="subscribe"
+                                   placeholder="E-mail"
+                                   required
+                            >
+                        </label>
+                        <button class="sf-submit-button" type="submit">
                             <span class="sf-submit-button-text">Subscribe</span>
                             <svg class="footer-subscribe-icon" width="24" height="24">
                                 <use href="./images/icons.svg#icon-plane"></use>
@@ -412,7 +416,7 @@
                 </div>
             </div>
         </footer>
-        <div class="modal-overlay is-open">
+        <div class="modal-overlay">
             <div class="modal">
                 <div class="close-button">
                     <div class="close-circle"></div>
