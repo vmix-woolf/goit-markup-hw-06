@@ -627,13 +627,10 @@ address {
 .close-button:focus {
     background-color: var(--ocean);
     border: none;
+    fill: var(--white-color);
 }
 .close-cross {
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.close-cross:hover,
-.close-cross:focus {
-    fill: var(--white-color);
 }
 .modal-title {
     font-weight: 500;
@@ -679,7 +676,7 @@ address {
 .modal-form-input:focus {
     border-color: var(--iris);
 }
-.modal-form-input:focus .modal-form-icon {
+.modal-form-input:focus + .modal-form-icon {
     fill: var(--iris);
 }
 .modal-textarea-field {
