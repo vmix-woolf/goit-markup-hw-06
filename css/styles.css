@@ -550,6 +550,7 @@ address {
 .sf-submit-button {
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 16px;
     min-width: 165px;
     height: 40px;
@@ -564,13 +565,8 @@ address {
     border: none;
     border-radius: 4px;
 }
-.sf-submit-button-text {
-    padding-left: 24px;
-}
 .footer-subscribe-icon {
-    width: 24px;
-    height: 24px;
-    fill: var(--white-color);
+    margin-left: 16px;
 }
 /* endregion Footer */
 
@@ -598,7 +594,7 @@ address {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 456px;
+    width: 408px;
     min-height: 584px;
     background-color: var(--dairy);
     box-shadow:
@@ -606,7 +602,9 @@ address {
         0 1px 3px rgba(0, 0, 0, 0.12),
         0 2px 1px rgba(0, 0, 0, 0.2);
     z-index: 1000;
-    padding: 0 24px;
+    border-radius: 4px;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    padding: 72px 24px 24px;
 }
 .close-button {
     position: absolute;
@@ -627,19 +625,23 @@ address {
 }
 .close-button:hover,
 .close-button:focus {
-    background-color: var(--cornflower);
+    background-color: var(--ocean);
     border: none;
+}
+.close-cross {
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.close-cross:hover,
+.close-cross:focus {
+    fill: var(--white-color);
 }
 .modal-title {
     font-weight: 500;
-    line-height: 1.5; /* 150% */
+    line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--navyblue);
     text-align: center;
-    margin-left: 24px;
-    margin-right: 24px;
     margin-bottom: 16px;
-    padding-top: 72px;
 }
 /* inputs */
 .modal-input-field {
@@ -671,7 +673,11 @@ address {
     top: 50%;
     left: 16px;
     transform: translateY(-50%);
+    fill: var(--navyblue-modal);
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-form-input:focus {
+    border-color: var(--iris);
 }
 .modal-form-input:focus .modal-form-icon {
     fill: var(--iris);
@@ -713,7 +719,7 @@ address {
         fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     fill: transparent;
 }
-input[type="checkbox"]:checked + .modal-form-checkbox {
+input[type="checkbox"]:checked + .modal-form-terms > .modal-form-checkbox {
     border: none;
     background-color: var(--ocean);
     fill: var(--cloud);
@@ -759,9 +765,7 @@ input[type="checkbox"]:checked + .modal-form-checkbox {
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     padding: 16px 32px;
     text-align: center;
-    margin-left: 119px;
-    margin-right: 119px;
-    margin-bottom: 24px;
+    margin: 0 auto;
     border-radius: 4px;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
 }
