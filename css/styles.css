@@ -489,7 +489,11 @@ address {
 
 /* region Portfolio */
 .portfolio {
-    padding: 120px 0 120px;
+    padding: 96px 0 96px;
+
+    @media only screen and (min-width: 768px) {
+        padding: 120px 0 120px;
+    }
 }
 .container.portfolio-container {
     display: flex;
@@ -506,11 +510,19 @@ address {
     margin-bottom: 72px;
 }
 .portfolio-cards {
-    background-color: var(--white-background);
     display: flex;
     flex-wrap: wrap;
-    row-gap: 48px;
-    column-gap: 24px;
+    gap: 72px;
+    background-color: var(--white-background);
+
+    @media only screen and (min-width: 768px) {
+        row-gap: 72px;
+        column-gap: 24px;
+    }
+    @media only screen and (min-width: 1158px) {
+        row-gap: 48px;
+        column-gap: 24px;
+    }
 }
 .portfolio-card {
     background-color: white;
@@ -518,7 +530,14 @@ address {
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
-    width: calc((100% - 48px) / 3);
+    max-width: 100%;
+
+    @media only screen and (min-width: 768px) {
+        width: calc((100% - 48px) / 2);
+    }
+    @media only screen and (min-width: 1158px) {
+        width: calc((100% - 48px) / 3);
+    }
 }
 .portfolio-card:hover {
     box-shadow: 0 1px 6px rgba(46, 47, 66, 0.08),
