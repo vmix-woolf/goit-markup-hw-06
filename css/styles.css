@@ -40,18 +40,24 @@ ul, ol {
 img {
     display: block;
 }
+.section {
+    padding: 96px 0;
 
+    @media only screen and (min-width: 1158px) {
+        padding: 120px 0;
+    }
+}
 .container {
     max-width: 320px;
     padding: 0 16px;
     margin: 0 auto;
 
-    @media screen and (min-width: 768px) {
-        max-width: 768px;
+    @media only screen and (min-width: 768px) {
+        width: 768px;
     }
 
-    @media screen and (min-width: 1158px) {
-        max-width: 1158px;
+    @media only screen and (min-width: 1158px) {
+        width: 1158px;
         padding: 0 15px;
     }
 }
@@ -69,9 +75,9 @@ img {
 }
 /* endregion */
 /* region comment about breakpoints: */
-/*  - mobile up to: 320px;
+/*  - mobile up to: 375px;
     - tablet up to: 768px;
-    - desktop up to: 1158px;
+    - desktop up to: 1280px;
 */
 /* endregion */
 /* region Header */
@@ -235,89 +241,76 @@ address {
 
 /* region Feature */
 .feature {
-    max-width: 320px;
     color: var(--navyblue);
 }
+
 .feature-list {
     display: flex;
+    flex-wrap: nowrap;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     gap: 72px;
+
+    @media only screen and (min-width: 768px) {
+        gap: 72px 24px;
+    }
+
+    @media only screen and (min-width: 1158px) {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        gap: 24px;
+    }
 }
 .feature-heading {
-    text-align: center;
-    font-size: 36px;
     font-weight: 700;
+    font-size: 36px;
     line-height: 1.11; /* 111.111% */
+    text-align: center;
     letter-spacing: 0.02em;
+    color: var(--navyblue);
     margin-bottom: 8px;
+
+    @media only screen and (min-width: 768px) {
+        text-align: left;
+    }
+
+    @media only screen and (min-width: 1158px) {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.2;
+    }
 }
 .feature-list-item {
-    display: flex;
-    flex-direction: column;
-    width: calc(100% - (16px * 2));
-    margin: 0 16px;
+    width: 100%;
+
+    @media only screen and (min-width: 768px) {
+        width: calc((100% - 24px) / 2);
+    }
+
+    @media only screen and (min-width: 1158px) {
+        width: calc(100% - (24px * 3) / 4);
+    }
 }
 .icon-container {
     display: none;
+    background-color: var(--cloud);
+    border: 1px solid var(--light-slate);
+    border-radius: 4px;
+    align-items: center;
+    justify-content: center;
+    height: 112px;
+    margin-bottom: 8px;
+
+    @media only screen and (min-width: 1158px) {
+        display: flex;
+    }
 }
 .feature-text {
     color: var(--slate);
     line-height: 1.5;
     font-weight: 500;
     letter-spacing: 0.02em;
-}
-
-@media only screen and (min-width: 768px) {
-    .feature {
-        max-width: 768px;
-    }
-    .feature-heading {
-        font-size: 20px;
-        font-weight: 500;
-        line-height: 1.2;
-        letter-spacing: 0.02em;
-        text-align: left;
-        margin-bottom: 8px;
-    }
-    .feature-list {
-        flex-wrap: wrap;
-        justify-content: space-between;
-        align-items: center;
-        column-gap: 24px;
-        row-gap: 72px;
-    }
-    .feature-list-item {
-        width: calc((100% - 24px * 1) / 2);
-    }
-}
-@media only screen and (min-width: 1158px) {
-    .feature {
-        max-width: 1440px;
-        padding: 120px 0 120px;
-        margin: 0 156px;
-    }
-    .feature-list {
-        flex-wrap: nowrap;
-        gap: 24px;
-    }
-    .feature-list-item {
-        width: calc((100% - 24px * 3) / 4);
-    }
-    .icon-container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-bottom: 8px;
-        height: 112px;
-        border: 1px solid #8E8F99;
-        border-radius: 4px;
-        background-color: var(--cloud);
-    }
-    .feature-text {
-        font-weight: normal;
-    }
 }
 /* endregion Feature*/
 
