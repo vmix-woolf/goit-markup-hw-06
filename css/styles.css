@@ -1,3 +1,6 @@
+.hide {
+    display: none;
+}
 :root {
     --light-slate: #8e8f99;
     --slate: #434455;
@@ -39,9 +42,18 @@ img {
 }
 
 .container {
-    max-width: 1158px;
-    padding: 0 15px;
+    max-width: 320px;
+    padding: 0 16px;
     margin: 0 auto;
+
+    @media screen and (min-width: 768px) {
+        max-width: 768px;
+    }
+
+    @media screen and (min-width: 1158px) {
+        max-width: 1158px;
+        padding: 0 15px;
+    }
 }
 .visually-hidden {
     position: absolute;
@@ -56,7 +68,12 @@ img {
     overflow: hidden;
 }
 /* endregion */
-
+/* region comment about breakpoints: */
+/*  - mobile up to: 320px;
+    - tablet up to: 768px;
+    - desktop up to: 1158px;
+*/
+/* endregion */
 /* region Header */
 .header {
     border-bottom: 1px solid var(--cornflower);
@@ -150,8 +167,9 @@ address {
 
 /* region Hero */
 .hero {
-    max-width: 1440px;
+    max-width: 320px;
     margin: 0 auto;
+    padding: 72px 0 72px;
     color: var(--white-background);
     background-color: var(--navyblue);
     background-image:
@@ -161,7 +179,6 @@ address {
     background-repeat: no-repeat;
     background-position: center;
     border: 1px solid black;
-    padding: 188px 0 188px;
 }
 .container.hero-container {
     display: flex;
@@ -169,13 +186,13 @@ address {
     align-items: center;
 }
 .hero-slogan {
+    max-width: 216px;
     font-weight: 700;
-    font-size: 56px;
-    line-height: 1.07;
+    font-size: 36px;
+    line-height: 1.11;
     letter-spacing: 0.02em;
     text-align: center;
     margin-bottom: 48px;
-    max-width: 496px;
 }
 .hero-button {
     font-family: inherit;
@@ -196,6 +213,23 @@ address {
 .hero-button:hover,
 .hero-button:focus {
     background-color: var(--ocean);
+}
+@media screen and (min-width: 768px) {
+    .hero {
+        max-width: 768px;
+        padding: 112px 0 112px;
+    }
+    .hero-slogan {
+        max-width: 496px;
+        font-size: 56px;
+        line-height: 1.07;
+    }
+}
+@media screen and (min-width: 1158px) {
+    .hero {
+        max-width: 14408px;
+        padding: 188px 0 188px;
+    }
 }
 /* endregion Hero */
 
@@ -236,6 +270,13 @@ address {
     color: var(--slate);
     line-height: 1.5;
     letter-spacing: 0.02em;
+}
+
+@media only screen and (min-width: 768px) {
+
+}
+@media only screen and (min-width: 1158px) {
+
 }
 /* endregion Feature*/
 
